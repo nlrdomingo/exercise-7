@@ -2,36 +2,39 @@
 <html lang="en-ca">
   <head>
     <meta charset="utf-8">
-    <title>Exercise 7: Recipe</title>
+    <title>Exercise 7</title>
 
-    <!-- Google Fonts -->
+    <!-- Google Font Embed Code: Body Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@300;500;700&family=Enriqueta:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;600;700&family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- Google Font Embed Code: Header Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Enriqueta:wght@400;500;600;700&family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
 
     <style>
       html {
         background-color: #f8f852;
         font-size: 16px;
-        margin: 0;
-        padding: 0;
+        margin: 2;
+        padding: 2;
       }
 
       body {
         font-family: "Enriqueta", serif;
         color: black;
-        margin: 0;
+        margin: 2;
         padding: 20px;
-        display: flex;
-        justify-content: center;
+        text-align: left;
       }
 
       #main {
-        width: 900px;
+        width: 1200px;
         max-width: 100%;
         padding: 20px;
         display: flex;
-        gap: 20px;
       }
 
       /* Heading Styles */
@@ -45,30 +48,27 @@
 
       h2 {
         font-family: "Bricolage Grotesque", sans-serif;
-        font-size: 1.5em;
+        font-size: 1.75em;
         font-weight: 500;
         margin: 5px 0;
       }
 
       h3 {
         font-family: "Bricolage Grotesque", sans-serif;
-        font-size: 1.3em;
+        font-size: 1.5em;
         font-weight: 600;
         color: black;
         margin-top: 20px;
       }
 
-      /* Left Column */
       .left-column {
-        width: 45%;
+        width: 40%;
       }
 
-      /* Right Column */
       .right-column {
         width: 50%;
       }
 
-      /* Ingredient List */
       .ingredient-list {
         font-family: "Enriqueta", serif;
         font-size: 1em;
@@ -83,7 +83,6 @@
         margin-left: 20px;
       }
 
-      /* Image and Figure */
       figure {
         width: 100%;
         margin: 0 0 10px 0;
@@ -93,7 +92,7 @@
       img {
         max-width: 100%;
         height: auto;
-        border-radius: 8px;
+        border-radius: 5px;
       }
 
       /* Paragraph and Step Styling */
@@ -106,12 +105,11 @@
       }
 
       /* Step Titles */
-      .step-title {
+      .steps {
         font-family: "Bricolage Grotesque", sans-serif;
+        font-size: 1.5em;
         font-weight: 500;
-        font-size: 1.2em;
-        margin-top: 20px;
-        color: black;
+        margin: 5px 0;
       }
     </style>
   </head>
@@ -120,12 +118,11 @@
     <div id="main">
       <!-- Left Column: Recipe Title and Ingredients -->
       <div class="left-column">
-        <!-- Recipe Title and Details -->
         <h1>Spinach, Tofu and Sesame Stir-Fry</h1>
         <h2>By: Martha Rose Shulman</h2>
         <h2>Yield: 3 Servings</h2>
 
-        <!-- Ingredients Section -->
+        <!-- List of ingredients -->
         <h3>Ingredients</h3>
         <ul class="ingredient-list">
           <li>1 tablespoon canola oil</li>
@@ -142,21 +139,21 @@
 
       <!-- Right Column: Image, Preparation, Steps, and Tips -->
       <div class="right-column">
-        <!-- Image -->
+        <!-- Tofu Image -->
         <figure>
           <img src="tofu-veggies.jpg" alt="Spinach, Tofu and Sesame Stir-Fry">
         </figure>
 
         <!-- Preparation Section -->
         <h3>Preparation</h3>
-        
-        <div class="step-title">Step 1</div>
+
+        <div class="steps">Step 1</div>
         <p>Heat the canola oil over medium-high heat in a large nonstick skillet or wok, and add the tofu. Stir-fry until the tofu is lightly colored, three to five minutes, and add the garlic, ginger, and chili flakes. Cook, stirring, until fragrant, about one minute, and add soy sauce to taste. Add the spinach and stir-fry until the spinach wilts, about one minute. Stir in the sesame seeds, and add more soy sauce to taste. Remove from the heat.</p>
 
-        <div class="step-title">Step 2</div>
+        <div class="steps">Step 2</div>
         <p>Using tongs, transfer the spinach and tofu mixture to a serving bowl, leaving the liquid behind in the pan or wok. Drizzle with the sesame oil, and add more soy sauce as desired. Serve with rice or other grains, or noodles. You may also use it as a filling for whole wheat pita bread.</p>
 
-        <div class="step-title">Tip</div>
+        <div class="steps">Tip</div>
         <p>Advance preparation: This is a last-minute preparation, but you can have your ingredients prepared well in advance.</p>
       </div>
     </div>
